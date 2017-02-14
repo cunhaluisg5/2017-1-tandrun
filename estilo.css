@@ -1,0 +1,26 @@
+body{
+  text-align: center;
+}
+#cenario{
+  width: 600px;
+  height: 420px;
+  border: 1px solid grey;
+  margin: auto;
+  position: relative;
+}
+#lebre, #tartaruga{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+#lebre{
+  border: 1px solid blue;
+  bottom: 0px;
+  left: 0px;
+}
+#tartaruga{
+  border: 1px solid green;
+  bottom: 0px;
+  left: 40px;
+}
