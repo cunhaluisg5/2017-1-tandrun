@@ -10,3 +10,24 @@ var lebre = {
   passo: 30,
   escorregar: 40
 };
+
+function atualizar() {
+  var divTartaruga = document.getElementById("tartaruga");
+  var divLebre = document.getElementById("lebre");
+  console.log(divTartaruga, divLebre);
+  divTartaruga.style.left = tartaruga.left+"px";
+  divTartaruga.style.bottom = tartaruga.bottom+"px";
+  divLebre.style.left = lebre.left+"px";
+  divLebre.style.bottom = lebre.bottom+"px";
+
+ }
+
+
+
+
+
+
+
+
+
+/**/
