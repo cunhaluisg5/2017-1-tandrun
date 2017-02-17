@@ -1,6 +1,6 @@
 var tartaruga = {
-  left: 0,
-  bottom: 40,
+  left: 40,
+  bottom: 0,
   passo: 10,
   escorregar: 20
 };
@@ -22,7 +22,14 @@ function atualizar() {
 
  }
 
+function mover(){
+  tartaruga.left += tartaruga.passo;
+  tartaruga.bottom += tartaruga.passo;
 
+  lebre.left += lebre.passo;
+  lebre.bottom += lebre.passo;
+
+}
 
 
 
