@@ -1,3 +1,4 @@
+
 var tartaruga = {
   left: 40,
   bottom: 0,
@@ -11,7 +12,7 @@ var lebre = {
   escorregar: 40
 };
 var relogio;
-var fps = 5
+var fps = 5;
 
 function atualizar() {
   var divTartaruga = document.getElementById("tartaruga");
@@ -21,10 +22,18 @@ function atualizar() {
   divLebre.style.left = lebre.left+"px";
   divLebre.style.bottom = lebre.bottom+"px";
 
-  if(tartaruga.bottom>=390 || lebre.bottom >=390){
+  var resultado = "&nbsp;"
+  if(tartaruga.bottom>=380){
+    resultado += "A tartaruga cruzou a linha de chegada!"
     clearInterval(relogio);
   }
+  if(lebre.bottom>=380){
+    resultado += "A lebre cruzou a linha de chegada!"
+    clearInterval(relogio);
+  }
+  document.getElementById("resultado").innerHTML = resultado;
  }
+
 
 function mover(){
   var passo;
@@ -33,16 +42,16 @@ function mover(){
   }else {
     passo = +2*tartaruga.passo/fps;
   }
-  tartaruga.left += passo;
-  tartaruga.bottom += passo;
+  tartaruga.left += (tartaruga.left+passo<0)?0:passo;
+  tartaruga.bottom += (tartaruga.bottom+passo<0)?0:passo;;
 
 if(Math.random()*100<=lebre.escorregar){
   passo = -2*lebre.passo/fps;
   }else {
   passo = +2*lebre.passo/fps;
   }
-  lebre.left += passo;
-  lebre.bottom += passo;
+  lebre.left += (lebre.left+passo<0)?0:passo;;
+  lebre.bottom += (lebre.bottom+passo<0)?0:passo;;
 }
 
 function passoDeAnimacao() {
