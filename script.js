@@ -1,4 +1,3 @@
-
 var tartaruga = {
   left: 40,
   bottom: 0,
@@ -60,8 +59,3 @@ function passoDeAnimacao() {
 }
 
 relogio = setInterval(passoDeAnimacao, 1000/fps);
-
-
-
-
-/**/
