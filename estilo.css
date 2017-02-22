@@ -1,12 +1,24 @@
+
 body{
   text-align: center;
 }
 #cenario{
   width: 460px;
   height: 420px;
-  border: 1px solid grey;
   margin: auto;
   position: relative;
+  background-repeat: repeat-x;
+  background-image:
+              url("mountain.png"),
+              url("forest1.png"),
+              url("forest1.png"),
+              url("mountain.png");
+  background-size:
+              320% 121%,
+              100%,
+              100%,
+              100%;
+  background-position:-61px, -268px 229px, -94px 129px, -34px 17px
 }
 #lebre, #tartaruga{
   width: 30px;
@@ -18,7 +30,6 @@ body{
 }
 
 #lebre{
-  border: 1px solid blue;
   bottom: 0px;
   left: 0px;
   background-image: url("rabbit.png");
@@ -26,7 +37,6 @@ body{
 }
 #tartaruga{
   width: 40px;
-  border: 1px solid green;
   bottom: 0px;
   left: 40px;
   background-image: url("turtle.png");
