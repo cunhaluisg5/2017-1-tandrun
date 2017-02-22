@@ -12,15 +12,23 @@ body{
   width: 30px;
   height: 30px;
   position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
 }
 
 #lebre{
   border: 1px solid blue;
   bottom: 0px;
   left: 0px;
+  background-image: url("rabbit.png");
+  background-position: center;
 }
 #tartaruga{
+  width: 40px;
   border: 1px solid green;
   bottom: 0px;
   left: 40px;
+  background-image: url("turtle.png");
+  background-position: center;
 }
