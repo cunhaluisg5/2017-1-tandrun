@@ -27,12 +27,22 @@ function atualizar() {
  }
 
 function mover(){
-  tartaruga.left += tartaruga.passo/fps;
-  tartaruga.bottom += tartaruga.passo/fps;
+  var passo;
+  if(Math.random()*100<=tartaruga.escorregar){
+    passo = -2*tartaruga.passo/fps;
+  }else {
+    passo = +2*tartaruga.passo/fps;
+  }
+  tartaruga.left += passo;
+  tartaruga.bottom += passo;
 
-  lebre.left += lebre.passo/fps;
-  lebre.bottom += lebre.passo/fps;
-
+if(Math.random()*100<=lebre.escorregar){
+  passo = -2*lebre.passo/fps;
+  }else {
+  passo = +2*lebre.passo/fps;
+  }
+  lebre.left += passo;
+  lebre.bottom += passo;
 }
 
 function passoDeAnimacao() {
