@@ -12,4 +12,4 @@ Possuir um navegador web.
 
 ### Projeto
 
-A animação foi desenvolvida na disciplina **Laboratório de Programação Hipermídia* no *CES/JF*.
+A animação foi desenvolvida na disciplina **Laboratório de Programação Hipermídia** no *CES/JF*.
